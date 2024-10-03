@@ -1,0 +1,99 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header {
+  background: url("./uploads/bd-header.jpg") no-repeat center center;
+  background-size: cover;
+  color: black;
+  text-align: center;
+  padding: 100px 0;
+  position: relative;
+  height: calc(100vh - 56px);
+}
+
+h1 {
+  padding: 24px;
+}
+.li_none {
+  display: none;
+}
+
+/* HOME CARDS */
+
+.card.mb-5.shadow-lg {
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.card.mb-5.shadow-lg:hover {
+  transform: scale(1.05); /* Vergrößert die Karte bei Hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stärkere Schatten bei Hover */
+  cursor: pointer; /* Zeigt eine Hand an, um die Klickbarkeit zu betonen */
+}
+
+.yoga {
+  background-color: lightsteelblue !important;
+  min-width: 100%;
+}
+.damen {
+  min-width: 100%;
+}
+
+.yoga h1 {
+  color: white;
+  padding: 24px;
+}
+
+.yoga a {
+  margin: 0 auto;
+}
+.damen a {
+  margin: 0 auto;
+}
+.card-img {
+  width: 100%;
+  height: 246px;
+  object-fit: cover;
+}
+
+.liste-img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.artikelliste {
+  background-color: lightsteelblue !important;
+  min-width: 100%;
+}
+
+.neon-text {
+  color: #fff; /* Weiße Grundfarbe der Schrift */
+  font-size: 48px; /* Schriftgröße */
+  text-shadow: 0 0 5px #fff, /* Weiches Leuchten */ 0 0 10px #fff,
+    /* Zweite Schicht des Leuchtens */ 0 0 20px #fff,
+    /* Weiteres Leuchten */ 0 0 40px #436bc0,
+    /* Hellere Schicht (leicht violett für Effekt) */ 0 0 80px #436bc0,
+    /* Intensiveres Leuchten */ 0 0 90px #436bc0,
+    /* Sehr starkes Leuchten */ 0 0 100px #436bc0; /* Weit ausgedehntes Leuchten */
+  font-weight: bold; /* Dickere Schrift für einen stärkeren Effekt */
+}
+
+.logout {
+  color: white !;
+}
+
+@media only screen and (max-width: 480px) {
+  .card-img {
+    width: 100%; /* Bild auf die volle Breite der Karte setzen */
+    height: 120px;
+    object-fit: cover; /* Optional: Bildfüllung anpassen, um das gesamte Bild sichtbar zu machen */
+  }
+}

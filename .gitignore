@@ -1,0 +1,7 @@
+# Ignoriere die Konfigurationsdatei, um sensible Daten zu schützen
+config.php
+
+
+# Abhängigkeiten (Composer)
+vendor/
+
